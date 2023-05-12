@@ -9,7 +9,6 @@ def removeDuplicates(nums: list[int]) -> int:
         else:
             nums.pop(i)
     k = len(nums)
-    print(nums)
     return k
 
 
@@ -18,7 +17,3 @@ def test():
              [[0, 0, 1, 1, 1, 2, 2, 3, 3, 4], 5, [0, 1, 2, 3, 4]]]
     for i in tests:
         print(removeDuplicates(i[0]) == i[1])
-        print(i[2], '\n')
-
-
-test()
